@@ -1,4 +1,7 @@
 {
+  "name": "new-nomis-shared",
+  "description": "Shared components, styles and helpers for new nomis",
+  "version": "1.0.0",
   "devDependencies": {
     "@storybook/react": "^3.4.11",
     "babel-core": "^6.26.3",
