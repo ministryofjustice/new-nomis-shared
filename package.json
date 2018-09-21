@@ -1,0 +1,51 @@
+{
+  "devDependencies": {
+    "@storybook/react": "^3.4.11",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "govuk-elements-sass": "^3.1.2",
+    "govuk_frontend_toolkit": "^7.5.0",
+    "jest": "^23.6.0",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.3",
+    "path": "^0.12.7",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0"
+  },
+  "scripts": {
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "test": "jest --env=jsdom",
+    "lint": "eslint .",
+    "verify": "yarn lint && yarn test"
+
+  },
+  "pre-commit": [
+    "verify"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,mjs}"
+    ],
+    "testMatch": [
+      "<rootDir>/**//**/*test.{js,jsx,mjs}"
+    ],
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.(js|jsx|mjs)$": "babel-jest",
+      "^.+\\.css$": "<rootDir>/jest-transforms/cssTransform.js",
+      "^(?!.*\\.(js|jsx|mjs|css|json)$)": "<rootDir>/jest-transforms/fileTransform.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
+    ],
+    "unmockedModulePathPatterns": [
+      "node_modules/react/",
+      "node_modules/enzyme/"
+    ]
+  }
+}
