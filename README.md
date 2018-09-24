@@ -10,5 +10,6 @@ The components haven't been transpiled so jest will complain unless we tell it t
     "[/\\\\]node_modules[/\\\\](?!(new-nomis-shared-components)/).+\\.(js|jsx|mjs)$"
   ]
   
- # Development (This code lives in the  stories directory) https://github.com/storybooks/storybook
+ # Development 
  To debug the components run yarn storybook
+ https://github.com/storybooks/storybook
