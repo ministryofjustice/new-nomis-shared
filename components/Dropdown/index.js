@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { getPrisonDescription, toFullName } from '../../utils';
 
 import './dropdown.scss';
+import '../common.scss';
 
 class Dropdown extends Component {
   render () {

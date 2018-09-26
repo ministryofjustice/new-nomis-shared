@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Dropdown from '../Dropdown';
 import './header.scss';
+import '../common.scss';
 
 class Header extends Component {
   render () {
