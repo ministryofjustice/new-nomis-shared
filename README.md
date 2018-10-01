@@ -1,14 +1,17 @@
 # NEW NOMIS shared components
 
-# Run
-yarn storybook
+#Development 
+ - To run see the components running, run yarn storybook
+ - You can run the unit tests via yarn test
 
-# Use
-The package has been published to npm, install by running yarn add --dev new-nomis-shared-components
-
-The components haven't been transpiled so jest will complain unless we tell it to run the files through babel-jest. We can do this by adding the following to the jest config section in packages.json or the config.js file. 
-
- "transformIgnorePatterns": [
-    "[/\\\\]node_modules[/\\\\](?!(new-nomis-shared-components)/).+\\.(js|jsx|mjs)$"
-  ]
+#Publish as a npm package
+  The component library is complied then pushed to npm. 
+  
+  To get started, run the following commands from the root directory.
+  - webpack
+  - cd lib
+  - npm version minor
+  - npm publish
+  
+ 
 

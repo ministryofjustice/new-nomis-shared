@@ -68,3 +68,6 @@ yarn-error.log*
 .gradle
 gradle
 Dockerrun.aws.json
+
+
+lib/*.js
