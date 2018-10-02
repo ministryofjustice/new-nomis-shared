@@ -7,7 +7,7 @@ import '../common.scss';
 
 class Dropdown extends Component {
   render () {
-    const { user, switchCaseLoad, history, menuOpen, setMenuOpen } = this.props;
+    const { user, switchCaseLoad, history, menuOpen, setMenuOpen, extraLinks } = this.props;
     const caseLoadDesc = getPrisonDescription(user);
     const options = user.caseLoadOptions.filter(x => x.caseLoadId !== user.activeCaseLoadId);
 
@@ -20,6 +20,10 @@ class Dropdown extends Component {
         <div className="dropdown-menu">
           { menuOpen &&
           <div>
+            {extraLinks.map(link => (
+              <a className="dropdown-menu-option" key={link.url} href={link.url} onClick={() => setMenuOpen(!menuOpen)}>
+                {link.text}
+              </a>))}
             {options.map((option) =>
               (<a className="dropdown-menu-option" id={`menu-option-${option.caseLoadId}`} key={option.caseLoadId} onClick={() => {
                 setMenuOpen(false);
@@ -53,15 +57,9 @@ Dropdown.defaultProps = {
     activeCaseLoadId: 'id',
     isOpen: false
   },
-  menuOpen: false
+  menuOpen: false,
+  extraLinks: []
 };
 
-/*const mapStateToProps = state => {
-  return {
-    isOpen: state.app.isOpen
-  };
-};*/
-
-//const LoginContainer = connect(mapStateToProps, mapDispatchToProps)(Login);
 
 export default Dropdown;

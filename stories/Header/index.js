@@ -5,8 +5,15 @@ import Header from '../../components/Header';
 
 storiesOf('Header', module)
   .add('Drop down closed', () => (<Header {...props} />))
-  .add('Drop down open', () => (<Header {...props} menuOpen />));
-
+  .add('Drop down open', () => (<Header {...props} menuOpen />))
+  .add('With extra link', () => (
+    <Header
+      {...props}
+      menuOpen
+      extraLinks={[
+        { text: 'My key worker allocations', url: '/myKeyWorkerAllocations' }
+      ]}
+    />));
 
 const props = {
   logoText: 'HMPPS',
