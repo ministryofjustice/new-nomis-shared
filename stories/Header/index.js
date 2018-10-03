@@ -24,7 +24,7 @@ const props = {
   },
   menuOpen: false,
   setMenuOpen: () => action('clicked'),
-  homeLink: () => action('clicked'),
+  homeLink: '/',
   user: {
     activeCaseLoadId: 'LEI',
     caseLoadOptions: [
@@ -33,8 +33,8 @@ const props = {
         description: 'LEEDS'
       },
       {
-        activeCaseLoadId: 'MID',
-        description: 'Morland'
+        caseLoadId: 'MID',
+        description: 'Moorland'
       }
     ]
   }
