@@ -33,6 +33,7 @@
     "testMatch": [
       "<rootDir>/**//**/*test.{js,jsx,mjs}"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
     "testEnvironment": "node",
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "babel-jest",
