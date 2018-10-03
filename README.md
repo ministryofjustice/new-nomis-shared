@@ -10,7 +10,7 @@
   To get started, run the following commands from the root directory.
   - webpack
   - cd lib
-  - npm version minor
+  - npm version <patch|minor|major>
   - npm publish
   
  
