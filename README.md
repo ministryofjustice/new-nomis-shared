@@ -8,9 +8,9 @@
   The component library is complied then pushed to npm. 
   
   To get started, run the following commands from the root directory.
-  - webpack
+  - yarn build
   - cd lib
-  - npm version minor
+  - npm version <patch|minor|major>
   - npm publish
   
  
