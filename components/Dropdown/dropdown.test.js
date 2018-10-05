@@ -94,5 +94,19 @@ describe('Dropdown component', () => {
       component.find('a.dropdown-menu-option').at(0).prop('onClick')();
       expect(props.history.push).not.toHaveBeenCalled();
     });
+
+    it('should setup extra links correctly', () => {
+      const callBack = jest.fn();
+      const extraLinks = [
+        { url: '/stuff', text: 'stuff' },
+        { text: 'route1', onClick: callBack }
+      ];
+
+      component.setProps({ extraLinks: extraLinks, menuOpen: true });
+      expect(component.find('#menu-option-stuff').text()).toBe('stuff');
+      component.find('#menu-option-route1').at(0).prop('onClick')();
+
+      expect(callBack).toHaveBeenCalled();
+    });
   });
 });

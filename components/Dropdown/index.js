@@ -35,9 +35,13 @@ class Dropdown extends Component {
               {extraLinks.map(link => (
                 <a
                   className="dropdown-menu-option"
-                  key={link.url}
+                  id={createMenuOptionId(link.text)}
+                  key={link.text}
                   href={link.url}
-                  onClick={() => setMenuOpen(!menuOpen)}
+                  onClick={() => {
+                    setMenuOpen(!menuOpen);
+                    if (link.onClick) {link.onClick();}
+                  }}
                 >
                   {link.text}
                 </a>
@@ -67,13 +71,16 @@ class Dropdown extends Component {
   }
 }
 
+const createMenuOptionId = (text) => `menu-option-${text && text.replace(' ', '-')}`;
+
 Dropdown.propTypes = {
   user: PropTypes.object,
   menuOpen: PropTypes.bool,
   setMenuOpen: PropTypes.func.isRequired,
   switchCaseLoad: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired,
-  caseChangeRedirect: PropTypes.bool
+  caseChangeRedirect: PropTypes.bool,
+  extraLinks: PropTypes.array
 };
 
 Dropdown.defaultProps = {
