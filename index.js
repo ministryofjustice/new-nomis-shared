@@ -1,7 +1,7 @@
-import Header from './components/Header';
+import Header from './components/Header'
 
 const exposed = {
-  Header
-};
+  Header,
+}
 
-module.exports = exposed;
+module.exports = exposed

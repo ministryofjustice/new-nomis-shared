@@ -1,31 +1,19 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { getPrisonDescription, toFullName } from '../../utils';
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { getPrisonDescription, toFullName } from '../../utils'
 
-import './dropdown.scss';
-import '../common.scss';
+import './dropdown.scss'
+import '../common.scss'
 
 class Dropdown extends Component {
-  render () {
-    const {
-      user,
-      switchCaseLoad,
-      history,
-      menuOpen,
-      setMenuOpen,
-      extraLinks,
-      caseChangeRedirect
-    } = this.props;
-    const caseLoadDesc = getPrisonDescription(user);
-    const options = user.caseLoadOptions.filter(x => x.caseLoadId !== user.activeCaseLoadId);
+  render() {
+    const { user, switchCaseLoad, history, menuOpen, setMenuOpen, extraLinks, caseChangeRedirect } = this.props
+    const caseLoadDesc = getPrisonDescription(user)
+    const options = user.caseLoadOptions.filter(x => x.caseLoadId !== user.activeCaseLoadId)
 
     return (
       <div className="menu-wrapper">
-        <div
-          id="info-wrapper"
-          className="info-wrapper clickable"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <div id="info-wrapper" className="info-wrapper clickable" onClick={() => setMenuOpen(!menuOpen)}>
           <strong className="user-name">{toFullName(user)}</strong>
           <span className="case-load">{caseLoadDesc}</span>
         </div>
@@ -39,8 +27,10 @@ class Dropdown extends Component {
                   key={link.text}
                   href={link.url}
                   onClick={() => {
-                    setMenuOpen(!menuOpen);
-                    if (link.onClick) {link.onClick();}
+                    setMenuOpen(!menuOpen)
+                    if (link.onClick) {
+                      link.onClick()
+                    }
                   }}
                 >
                   {link.text}
@@ -52,26 +42,26 @@ class Dropdown extends Component {
                   id={`menu-option-${option.caseLoadId}`}
                   key={option.caseLoadId}
                   onClick={() => {
-                    setMenuOpen(false);
-                    switchCaseLoad(option.caseLoadId);
-                    caseChangeRedirect && history.push('/');
+                    setMenuOpen(false)
+                    switchCaseLoad(option.caseLoadId)
+                    caseChangeRedirect && history.push('/')
                   }}
                 >
                   {option.description}
                 </a>
               ))}
-              <a className="dropdown-menu-link" key={'logout'} href={'/auth/logout'}>
+              <a className="dropdown-menu-link" key="logout" href="/auth/logout">
                 Log out
               </a>
             </div>
           )}
         </div>
       </div>
-    );
+    )
   }
 }
 
-const createMenuOptionId = (text) => `menu-option-${text && text.replace(' ', '-')}`;
+const createMenuOptionId = text => `menu-option-${text && text.replace(' ', '-')}`
 
 Dropdown.propTypes = {
   user: PropTypes.object,
@@ -80,18 +70,18 @@ Dropdown.propTypes = {
   switchCaseLoad: PropTypes.func.isRequired,
   history: PropTypes.object.isRequired,
   caseChangeRedirect: PropTypes.bool,
-  extraLinks: PropTypes.array
-};
+  extraLinks: PropTypes.array,
+}
 
 Dropdown.defaultProps = {
   user: {
     firstName: 'first',
     activeCaseLoadId: 'id',
-    isOpen: false
+    isOpen: false,
   },
   menuOpen: false,
   extraLinks: [],
-  caseChangeRedirect: true
-};
+  caseChangeRedirect: true,
+}
 
-export default Dropdown;
+export default Dropdown
