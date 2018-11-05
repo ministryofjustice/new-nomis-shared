@@ -1,20 +1,44 @@
 {
+  "engines": {
+    "npm": ">=3"
+  },
+  "author": "HMPPS",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "govuk-elements-sass": "^3.1.2",
+    "govuk_frontend_toolkit": "^7.5.0",
+    "moment": "^2.22.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-router-prop-types": "^1.0.4"
+  },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.11",
+    "@storybook/addons": "3.4.11",
     "@storybook/react": "^3.4.11",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-loader": "7",
+    "babel-runtime": "^6.26.0",
     "css-loader": "^1.0.0",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",
-    "govuk-elements-sass": "^3.1.2",
-    "govuk_frontend_toolkit": "^7.5.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-json": "^1.2.1",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.3",
     "jest": "^23.6.0",
-    "moment": "^2.22.2",
+    "lint-staged": "^8.0.4",
     "node-sass": "^4.9.3",
     "path": "^0.12.7",
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2",
+    "prettier": "^1.14.3",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.20.2",
@@ -24,8 +48,26 @@
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --env=jsdom",
     "lint": "eslint .",
+    "lint-staged": "lint-staged",
     "verify": "yarn lint && yarn test",
     "build": "webpack --mode production"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && yarn test"
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "*.{js,json,css,md}": [
+        "prettier --write",
+        "eslint --fix",
+        "git add"
+      ]
+    },
+    "ignore": [
+      "package.json"
+    ]
   },
   "pre-commit": [
     "verify"

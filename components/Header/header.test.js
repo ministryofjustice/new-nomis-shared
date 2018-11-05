@@ -1,32 +1,46 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import Header from ".";
-import DropDown from '../Dropdown';
+import React from 'react'
+import { shallow } from 'enzyme'
+import Header from '.'
+import DropDown from '../Dropdown'
+
+const mockHistory = {
+  push: jest.fn(),
+  action: 'PUSH',
+  block: jest.fn(),
+  createHref: jest.fn(),
+  go: jest.fn(),
+  goBack: jest.fn(),
+  goForward: jest.fn(),
+  listen: jest.fn(),
+  location: { hash: '', pathname: '', search: '' },
+  replace: jest.fn(),
+}
 
 describe('Header component', () => {
-  let header;
+  let header
   const props = {
     homeLink: '',
     title: '',
     logoText: '',
-    history: {},
+    history: mockHistory,
     switchCaseLoad: () => {},
     setMenuOpen: () => {},
-  };
+    user: { caseLoadOptions: [] },
+  }
 
   beforeEach(() => {
-    header = shallow(<Header {...props} />);
-  });
+    header = shallow(<Header {...props} />)
+  })
 
   it('should not render DropDown when the user has not active case load', () => {
-    expect(header.find(DropDown).length).toBe(0);
-  });
+    expect(header.find(DropDown).length).toBe(0)
+  })
 
   it('should render DropDown when the user has an active case load', () => {
     header.setProps({
       ...props,
-      user: { activeCaseLoadId: 'LEI' }
-    });
-    expect(header.find(DropDown).length).toBe(1);
-  });
-});
+      user: { activeCaseLoadId: 'LEI', caseLoadOptions: [] },
+    })
+    expect(header.find(DropDown).length).toBe(1)
+  })
+})
