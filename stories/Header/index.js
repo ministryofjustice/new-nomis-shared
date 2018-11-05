@@ -1,14 +1,8 @@
+/* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import Header from '../../components/Header'
-
-storiesOf('Header', module)
-  .add('Drop down closed', () => <Header {...props} />)
-  .add('Drop down open', () => <Header {...props} menuOpen />)
-  .add('With extra link', () => (
-    <Header {...props} menuOpen extraLinks={[{ text: 'My key worker allocations', url: '/myKeyWorkerAllocations' }]} />
-  ))
 
 const props = {
   logoText: 'HMPPS',
@@ -34,3 +28,10 @@ const props = {
     ],
   },
 }
+
+storiesOf('Header', module)
+  .add('Drop down closed', () => <Header {...props} />)
+  .add('Drop down open', () => <Header {...props} menuOpen />)
+  .add('With extra link', () => (
+    <Header {...props} menuOpen extraLinks={[{ text: 'My key worker allocations', url: '/myKeyWorkerAllocations' }]} />
+  ))

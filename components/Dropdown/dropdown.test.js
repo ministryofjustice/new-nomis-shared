@@ -15,6 +15,19 @@ const user = {
   ],
 }
 
+const mockHistory = {
+  push: jest.fn(),
+  action: 'PUSH',
+  block: jest.fn(),
+  createHref: jest.fn(),
+  go: jest.fn(),
+  goBack: jest.fn(),
+  goForward: jest.fn(),
+  listen: jest.fn(),
+  location: { hash: '', pathname: '', search: '' },
+  replace: jest.fn(),
+}
+
 const userWithoutCaseLoadOptions = {
   activeCaseLoadId: 'LEI',
   caseLoadOptions: [],
@@ -24,7 +37,7 @@ const props = {
   switchCaseLoad: jest.fn(),
   user,
   setMenuOpen: jest.fn(),
-  history: { push: jest.fn() },
+  history: mockHistory,
 }
 
 const component = shallow(<Dropdown {...props} />)
@@ -115,7 +128,7 @@ describe('Dropdown component', () => {
 
     it('should setup extra links correctly', () => {
       const callBack = jest.fn()
-      const extraLinks = [{ url: '/stuff', text: 'stuff' }, { text: 'route1', onClick: callBack }]
+      const extraLinks = [{ url: '/stuff', text: 'stuff' }, { url: '/route1', text: 'route1', onClick: callBack }]
 
       component.setProps({ extraLinks, menuOpen: true })
       expect(component.find('#menu-option-stuff').text()).toBe('stuff')

@@ -3,15 +3,29 @@ import { shallow } from 'enzyme'
 import Header from '.'
 import DropDown from '../Dropdown'
 
+const mockHistory = {
+  push: jest.fn(),
+  action: 'PUSH',
+  block: jest.fn(),
+  createHref: jest.fn(),
+  go: jest.fn(),
+  goBack: jest.fn(),
+  goForward: jest.fn(),
+  listen: jest.fn(),
+  location: { hash: '', pathname: '', search: '' },
+  replace: jest.fn(),
+}
+
 describe('Header component', () => {
   let header
   const props = {
     homeLink: '',
     title: '',
     logoText: '',
-    history: {},
+    history: mockHistory,
     switchCaseLoad: () => {},
     setMenuOpen: () => {},
+    user: { caseLoadOptions: [] },
   }
 
   beforeEach(() => {
@@ -25,7 +39,7 @@ describe('Header component', () => {
   it('should render DropDown when the user has an active case load', () => {
     header.setProps({
       ...props,
-      user: { activeCaseLoadId: 'LEI' },
+      user: { activeCaseLoadId: 'LEI', caseLoadOptions: [] },
     })
     expect(header.find(DropDown).length).toBe(1)
   })
