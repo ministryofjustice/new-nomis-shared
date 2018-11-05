@@ -14,7 +14,14 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
 
   return (
     <div className="menu-wrapper">
-      <div id="info-wrapper" className="info-wrapper clickable" onClick={() => setMenuOpen(!menuOpen)}>
+      <div
+        id="info-wrapper"
+        className="info-wrapper"
+        onClick={() => setMenuOpen(!menuOpen)}
+        onKeyPress={() => setMenuOpen(!menuOpen)}
+        role="menu"
+        tabIndex="0"
+      >
         <strong className="user-name">{toFullName(user)}</strong>
         <span className="case-load">{caseLoadDesc}</span>
       </div>
@@ -29,27 +36,26 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
                 href={link.url}
                 onClick={() => {
                   setMenuOpen(!menuOpen)
-                  if (link.onClick) {
-                    link.onClick()
-                  }
+                  if (link.onClick) link.onClick()
                 }}
               >
                 {link.text}
               </a>
             ))}
             {options.map(option => (
-              <a
+              <button
+                type="button"
                 className="dropdown-menu-option"
                 id={`menu-option-${option.caseLoadId}`}
                 key={option.caseLoadId}
                 onClick={() => {
                   setMenuOpen(false)
                   switchCaseLoad(option.caseLoadId)
-                  caseChangeRedirect && history.push('/')
+                  if (caseChangeRedirect) history.push('/')
                 }}
               >
                 {option.description}
-              </a>
+              </button>
             ))}
             <a className="dropdown-menu-link" key="logout" href="/auth/logout">
               Log out

@@ -49,7 +49,7 @@ afterEach(() => {
 describe('Dropdown component', () => {
   describe('When the Dropdown menu is inactive', () => {
     it('should not render menu items', () => {
-      expect(component.find('a.dropdown-menu-option').length).toBe(0)
+      expect(component.find('button.dropdown-menu-option').length).toBe(0)
     })
 
     it('should open the menu on click', () => {
@@ -68,7 +68,7 @@ describe('Dropdown component', () => {
     })
 
     it('should render correctly', () => {
-      const dropdown = component.find('a.dropdown-menu-option')
+      const dropdown = component.find('button.dropdown-menu-option')
       // Current id 'LEI' should be omitted
       expect(dropdown.length).toEqual(1)
       expect(dropdown.get(0).props.children).toEqual('Shrewsbury (HMP)')
@@ -93,9 +93,10 @@ describe('Dropdown component', () => {
 
     it('should close the menu when clicked', () => {
       component
-        .find('a.dropdown-menu-option')
+        .find('button.dropdown-menu-option')
         .at(0)
         .prop('onClick')()
+
       expect(props.setMenuOpen).toHaveBeenCalledWith(false)
     })
   })
@@ -103,7 +104,7 @@ describe('Dropdown component', () => {
   describe('Dropdown menu items', () => {
     it('should switch the case load when clicked', () => {
       component
-        .find('a.dropdown-menu-option')
+        .find('button.dropdown-menu-option')
         .at(0)
         .prop('onClick')()
       expect(props.switchCaseLoad).toHaveBeenCalledWith('SYI')
@@ -111,7 +112,7 @@ describe('Dropdown component', () => {
 
     it('should redirect back to the root of the application by default when clicked', () => {
       component
-        .find('a.dropdown-menu-option')
+        .find('button.dropdown-menu-option')
         .at(0)
         .prop('onClick')()
       expect(props.history.push).toHaveBeenCalledWith('/')
@@ -120,7 +121,7 @@ describe('Dropdown component', () => {
     it('should NOT redirect back to the root of the application if specified when clicked', () => {
       component.setProps({ caseChangeRedirect: false })
       component
-        .find('a.dropdown-menu-option')
+        .find('button.dropdown-menu-option')
         .at(0)
         .prop('onClick')()
       expect(props.history.push).not.toHaveBeenCalled()
