@@ -47,6 +47,7 @@
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
     "test": "jest --env=jsdom",
+    "test-watch": "jest --env=jsdom --watchAll",
     "lint": "eslint .",
     "lint-staged": "lint-staged",
     "verify": "yarn lint && yarn test",
