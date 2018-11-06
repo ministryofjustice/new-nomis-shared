@@ -8,6 +8,19 @@ module.exports = {
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
+  externals: [
+    'govuk-elements-sass',
+    'govuk_frontend_toolkit',
+    'moment',
+    'prop-types',
+    'react',
+    'react-dom',
+    'react-router-dom',
+    'react-router-prop-types',
+    'css-loader',
+    'style-loader',
+    'sass-loader',
+  ],
   module: {
     rules: [
       {

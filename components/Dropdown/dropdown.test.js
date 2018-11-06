@@ -129,7 +129,7 @@ describe('Dropdown component', () => {
 
     it('should setup extra links correctly', () => {
       const callBack = jest.fn()
-      const extraLinks = [{ url: '/stuff', text: 'stuff' }, { url: '/route1', text: 'route1', onClick: callBack }]
+      const extraLinks = [{ text: 'stuff' }, { url: '/route1', text: 'route1', onClick: callBack }]
 
       component.setProps({ extraLinks, menuOpen: true })
       expect(component.find('#menu-option-stuff').text()).toBe('stuff')
