@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ReactRouterPropTypes from 'react-router-prop-types'
 import { getPrisonDescription, toFullName } from '../../utils'
 
 import './dropdown.scss'
@@ -18,7 +17,10 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
         id="info-wrapper"
         className="info-wrapper"
         onClick={() => setMenuOpen(!menuOpen)}
-        onKeyPress={() => setMenuOpen(!menuOpen)}
+        onKeyPress={event => {
+          setMenuOpen(!menuOpen)
+          event.preventDefault()
+        }}
         role="menu"
         tabIndex="0"
       >
@@ -80,10 +82,10 @@ Dropdown.propTypes = {
   menuOpen: PropTypes.bool,
   setMenuOpen: PropTypes.func.isRequired,
   switchCaseLoad: PropTypes.func.isRequired,
-  history: ReactRouterPropTypes.history.isRequired,
+  history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
   caseChangeRedirect: PropTypes.bool,
   extraLinks: PropTypes.arrayOf(
-    PropTypes.shape({ url: PropTypes.string.isRequired, text: PropTypes.string.isRequired, onclick: PropTypes.func })
+    PropTypes.shape({ url: PropTypes.string, text: PropTypes.string.isRequired, onclick: PropTypes.func })
   ),
 }
 
