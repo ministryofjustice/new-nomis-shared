@@ -34294,7 +34294,15 @@
           return _react2.default.createElement(_Footer2.default, { meta: meta })
         })
         .add('With navigation links', function() {
-          return _react2.default.createElement(_Footer2.default, { meta: meta, navigation: navigation })
+          return _react2.default.createElement(_Footer2.default, { navigation: navigation })
+        })
+        .add('With children', function() {
+          return _react2.default.createElement(
+            _Footer2.default,
+            null,
+            'Built by the ',
+            _react2.default.createElement(_Footer2.default.Link, { href: '/gds' }, 'Government Digital Service')
+          )
         })
     }.call(exports, __webpack_require__(72)(module)))
   },
