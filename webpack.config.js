@@ -20,6 +20,11 @@ module.exports = {
     'css-loader',
     'style-loader',
     'sass-loader',
+    'file-loader',
+    'emotion',
+    'react-emotion',
+    '@govuk-react/constants',
+    '@govuk-react/header',
   ],
   module: {
     rules: [
@@ -61,6 +66,10 @@ module.exports = {
             },
           },
         ],
+      },
+      {
+        test: /\.(jpg|png|gif)$/,
+        loader: 'url-loader',
       },
     ],
   },

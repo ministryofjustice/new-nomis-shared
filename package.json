@@ -5,7 +5,12 @@
   "author": "HMPPS",
   "license": "UNLICENSED",
   "dependencies": {
+    "@govuk-react/constants": "^0.5.1",
+    "@govuk-react/header": "^0.5.1",
     "css-loader": "^1.0.0",
+    "emotion": "9.2.12",
+    "file-loader": "^3.0.1",
+    "govuk-colours": "^1.0.3",
     "govuk-elements-sass": "^3.1.2",
     "govuk_frontend_toolkit": "^7.5.0",
     "moment": "^2.22.2",
@@ -13,6 +18,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
+    "react-emotion": "9.2.12",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.0"
   },
@@ -40,6 +46,9 @@
     "lint-staged": "^8.0.4",
     "path": "^0.12.7",
     "prettier": "^1.14.3",
+    "react-router-dom": "^4.3.1",
+    "react-test-renderer": "^16.7.0",
+    "url-loader": "^1.1.2",
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2"
   },
