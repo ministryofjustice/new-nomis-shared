@@ -54,6 +54,7 @@
   },
   "scripts": {
     "storybook": "start-storybook -p 9001 -c .storybook",
+    "build-storybook": "build-storybook -c .storybook -o docs",
     "test": "jest --env=jsdom",
     "test-watch": "jest --env=jsdom --watchAll",
     "lint": "eslint .",
@@ -63,7 +64,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && yarn test"
+      "pre-commit": "yarn build-storybook && lint-staged && yarn test"
     }
   },
   "lint-staged": {
