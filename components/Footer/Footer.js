@@ -21,6 +21,14 @@ import {
 import FooterLink from './elements/FooterLink'
 
 const hyphenateString = str => str.replace(/ +/g, '-').toLowerCase()
+const renderLinks = items =>
+  items.map(({ href, text, ...item }) => (
+    <li key={hyphenateString(text)}>
+      <FooterLink href={href} {...item}>
+        {text}
+      </FooterLink>
+    </li>
+  ))
 
 // https://github.com/alphagov/govuk-frontend/blob/master/src/components/footer/template.njk
 const Footer = ({ navigation, meta, children }) => (
@@ -37,15 +45,7 @@ const Footer = ({ navigation, meta, children }) => (
                   </StyledSectionHeading>
                   {section.items &&
                     section.items.length > 0 && (
-                      <StyledFooterList columns={section.columns}>
-                        {section.items.map(({ href, text, ...item }) => (
-                          <li key={hyphenateString(text)}>
-                            <FooterLink href={href} {...item}>
-                              {text}
-                            </FooterLink>
-                          </li>
-                        ))}
-                      </StyledFooterList>
+                      <StyledFooterList columns={section.columns}>{renderLinks(section.items)}</StyledFooterList>
                     )}
                 </StyledSection>
               ))}
@@ -61,15 +61,7 @@ const Footer = ({ navigation, meta, children }) => (
             meta.items.length > 0 && (
               <Fragment>
                 <StyledHiddenHeader level={2}>Support links</StyledHiddenHeader>
-                <StyledInlineList>
-                  {meta.items.map(({ href, text, ...item }) => (
-                    <li key={hyphenateString(text)}>
-                      <FooterLink href={href} {...item}>
-                        {text}
-                      </FooterLink>
-                    </li>
-                  ))}
-                </StyledInlineList>
+                <StyledInlineList>{renderLinks(meta.items)}</StyledInlineList>
               </Fragment>
             )}
           {children && <StyledMetaCustom>{children}</StyledMetaCustom>}
