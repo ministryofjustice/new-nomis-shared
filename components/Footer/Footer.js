@@ -38,9 +38,11 @@ const Footer = ({ navigation, meta, children }) => (
                   {section.items &&
                     section.items.length > 0 && (
                       <StyledFooterList columns={section.columns}>
-                        {section.items.map(item => (
-                          <li key={hyphenateString(item.text)}>
-                            <FooterLink href={item.href}>{item.text}</FooterLink>
+                        {section.items.map(({ href, text, ...item }) => (
+                          <li key={hyphenateString(text)}>
+                            <FooterLink href={href} {...item}>
+                              {text}
+                            </FooterLink>
                           </li>
                         ))}
                       </StyledFooterList>
@@ -60,10 +62,10 @@ const Footer = ({ navigation, meta, children }) => (
               <Fragment>
                 <StyledHiddenHeader level={2}>Support links</StyledHiddenHeader>
                 <StyledInlineList>
-                  {meta.items.map(item => (
-                    <li key={hyphenateString(item.text)}>
-                      <FooterLink href={item.href} {...item}>
-                        {item.text}
+                  {meta.items.map(({ href, text, ...item }) => (
+                    <li key={hyphenateString(text)}>
+                      <FooterLink href={href} {...item}>
+                        {text}
                       </FooterLink>
                     </li>
                   ))}
