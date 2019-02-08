@@ -1,7 +1,15 @@
 {
   "name": "new-nomis-shared-components",
   "description": "Shared components, styles for new nomis",
-  "version": "1.8.3",
+  "version": "1.8.5",
   "main": "./lib/index.js",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "peerDependencies": {
+    "emotion": ">=9",
+    "moment": ">=2",
+    "react": ">=16",
+    "react-emotion": ">=9",
+    "@govuk-react/constants": ">=0.3",
+    "@govuk-react/header": ">=0.3"
+  }
 }

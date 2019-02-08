@@ -141,7 +141,7 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
         className="css-1c78jxr"
       >
         <h2
-          className="css-tf0tgi-StyledHeader-StyledHoc ecdzz5u0"
+          className="css-45ndwf-StyledHeader-StyledHoc ecdzz5u0"
         >
           Support links
         </h2>
@@ -152,7 +152,6 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
             <a
               className="css-1timic5"
               href="/normal-link"
-              text="Normal Link"
             >
               Normal Link
             </a>
@@ -162,7 +161,6 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
               className="css-1timic5"
               href="/router-link"
               onClick={[Function]}
-              text="Router Link"
             >
               Router Link
             </a>
@@ -171,7 +169,6 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
             <a
               className="css-1timic5"
               onClick={[MockFunction]}
-              text="onClick Link"
             >
               onClick Link
             </a>
@@ -236,7 +233,7 @@ exports[`<Footer /> should match the with navigation snapshot 1`] = `
         className="css-1o7eu7"
       >
         <h2
-          className="css-10y6xpd-StyledHeader-StyledHoc ecdzz5u0"
+          className="css-1jjvyyi-StyledHeader-StyledHoc ecdzz5u0"
         >
           Services and information
         </h2>
@@ -377,7 +374,7 @@ exports[`<Footer /> should match the with navigation snapshot 1`] = `
         className="css-1o7eu7"
       >
         <h2
-          className="css-10y6xpd-StyledHeader-StyledHoc ecdzz5u0"
+          className="css-1jjvyyi-StyledHeader-StyledHoc ecdzz5u0"
         >
           Departments and policy
         </h2>

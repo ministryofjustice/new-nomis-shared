@@ -14,8 +14,6 @@ module.exports = {
     'moment',
     'prop-types',
     'react',
-    'react-dom',
-    'react-router-dom',
     'react-router-prop-types',
     'css-loader',
     'style-loader',
