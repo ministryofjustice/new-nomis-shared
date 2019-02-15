@@ -3,14 +3,16 @@ import PropTypes from 'prop-types'
 import Footer from '../Footer'
 
 const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
+  const link = (text, href, newTab) => ({ text, href, target: newTab ? '_blank' : undefined })
+
   const footerNavigation = [
     {
       title: 'Useful links',
       items: [
-        { text: 'Features', href: `${prisonStaffHubUrl}/content/features`, target: '_blank' },
-        { text: 'Roadmap', href: `${prisonStaffHubUrl}/content/roadmap`, target: '_blank' },
-        { text: 'Support', href: `${prisonStaffHubUrl}/content/support`, target: '_blank' },
-        { text: "What's new", href: `${prisonStaffHubUrl}/content/whats-new`, target: '_blank' },
+        link('Features', `${prisonStaffHubUrl}/content/features`, true),
+        link('Roadmap', `${prisonStaffHubUrl}/content/roadmap`, true),
+        link('Support', `${prisonStaffHubUrl}/content/support`, true),
+        link("What's new", `${prisonStaffHubUrl}/content/whats-new`, true),
       ],
     },
   ]
@@ -18,7 +20,7 @@ const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
   const footerMeta = {
     items: [
       { text: 'Contact', href: `mailto:${feedbackEmail}` },
-      { text: 'Terms and conditions', href: `${prisonStaffHubUrl}/content/terms-conditions`, target: '_blank' },
+      link('Terms and conditions', `${prisonStaffHubUrl}/content/terms-conditions`, true),
     ],
   }
   return <Footer meta={footerMeta} navigation={footerNavigation} />
