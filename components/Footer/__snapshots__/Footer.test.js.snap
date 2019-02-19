@@ -2,7 +2,7 @@
 
 exports[`<Footer /> should match the default snapshot 1`] = `
 <footer
-  className="css-1ynevfo"
+  className="css-o907y"
   role="contentinfo"
 >
   <div
@@ -60,7 +60,7 @@ exports[`<Footer /> should match the default snapshot 1`] = `
 
 exports[`<Footer /> should match the with children snapshot 1`] = `
 <footer
-  className="css-1ynevfo"
+  className="css-o907y"
   role="contentinfo"
 >
   <div
@@ -128,7 +128,7 @@ exports[`<Footer /> should match the with children snapshot 1`] = `
 
 exports[`<Footer /> should match the with meta snapshot 1`] = `
 <footer
-  className="css-1ynevfo"
+  className="css-o907y"
   role="contentinfo"
 >
   <div
@@ -220,7 +220,7 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
 
 exports[`<Footer /> should match the with navigation snapshot 1`] = `
 <footer
-  className="css-1ynevfo"
+  className="css-o907y"
   role="contentinfo"
 >
   <div
