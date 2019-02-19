@@ -32,6 +32,10 @@ export const StyledFooter = styled('footer')`
   border-top: 1px solid ${FOOTER_BORDER_TOP};
   color: ${FOOTER_TEXT};
   background: ${FOOTER_BACKGROUND};
+
+  @media print {
+    display: none;
+  }
 `
 
 export const StyledContainer = styled('div')`
