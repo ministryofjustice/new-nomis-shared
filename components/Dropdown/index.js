@@ -25,7 +25,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
         tabIndex="0"
       >
         <strong className="user-name">{toFullName(user)}</strong>
-        <span className="case-load">{caseLoadDesc}</span>
+        {caseLoadDesc && <span className="case-load">{caseLoadDesc}</span>}
       </div>
       <div className="dropdown-menu">
         {menuOpen && (
@@ -60,7 +60,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
               </button>
             ))}
             <a className="dropdown-menu-link" key="logout" href="/auth/logout">
-              Log out
+              Sign out
             </a>
           </div>
         )}
@@ -71,6 +71,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
 
 Dropdown.propTypes = {
   user: PropTypes.shape({
+    name: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     activeCaseLoadId: PropTypes.string,
@@ -91,8 +92,9 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   user: {
-    firstName: 'first',
-    activeCaseLoadId: 'id',
+    name: '',
+    firstName: '',
+    activeCaseLoadId: '',
     isOpen: false,
   },
   menuOpen: false,

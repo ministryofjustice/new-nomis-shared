@@ -20,13 +20,7 @@ const properCaseName = name =>
         .join('-')
 
 const toFullName = ({ firstName, lastName, name }) =>
-  !isBlank(name)
-    ? name
-        .split(' ')
-        .map(properCaseName)
-        .join(', ')
-    : (!isBlank(lastName) ? `${properCaseName(lastName)}, ` : '') +
-      (!isBlank(firstName) ? properCaseName(firstName) : '')
+  isBlank(name) ? `${properCaseName(firstName)} ${properCaseName(lastName)}` : name
 
 const getHoursMinutes = timestamp => {
   const indexOfT = timestamp.indexOf('T')

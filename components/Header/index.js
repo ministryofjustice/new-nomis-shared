@@ -32,7 +32,7 @@ const Header = ({
       <div className="right-content">
         <div className="right-menu">
           {user &&
-            user.activeCaseLoadId && (
+            user.username && (
               <Dropdown
                 user={user}
                 menuOpen={menuOpen}
@@ -54,6 +54,7 @@ Header.propTypes = {
   title: PropTypes.string.isRequired,
   logoText: PropTypes.string.isRequired,
   user: PropTypes.shape({
+    username: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     activeCaseLoadId: PropTypes.string,
