@@ -36,10 +36,10 @@ describe('Header component', () => {
     expect(header.find(DropDown).length).toBe(0)
   })
 
-  it('should render DropDown when the user has an active case load', () => {
+  it('should render DropDown when the user has been loaded', () => {
     header.setProps({
       ...props,
-      user: { activeCaseLoadId: 'LEI', caseLoadOptions: [] },
+      user: { username: 'CA_USER', caseLoadOptions: [] },
     })
     expect(header.find(DropDown).length).toBe(1)
   })

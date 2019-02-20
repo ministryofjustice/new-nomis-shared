@@ -19,8 +19,7 @@
 
 .user-name {
   position: relative;
-  padding: 0 10px 0 0px;
-  border-right: solid white 1px;
+  padding: 0 10px 0 0;
   font-size: 19px;
   margin-left: auto;
 }
@@ -29,6 +28,7 @@
   padding: 0 18px 0 10px;
   font-size: 19px;
   margin-right: auto;
+  border-left: solid white 1px;
 }
 
 .dropdown-menu {

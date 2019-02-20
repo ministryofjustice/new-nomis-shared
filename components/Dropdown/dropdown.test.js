@@ -28,7 +28,7 @@ const mockHistory = {
   replace: jest.fn(),
 }
 
-const userWithoutCaseLoadOptions = {
+const userWithEmptyCaseLoadOptions = {
   activeCaseLoadId: 'LEI',
   caseLoadOptions: [],
 }
@@ -75,10 +75,37 @@ describe('Dropdown component', () => {
     })
 
     it('should handle the display of empty caseLoadOptions elegantly', () => {
-      component.setProps({ user: userWithoutCaseLoadOptions })
+      component.setProps({ user: userWithEmptyCaseLoadOptions })
 
       expect(component.find('a.dropdown-menu-option')).toHaveLength(0)
-      expect(component.find('a.dropdown-menu-link').get(0).props.children).toEqual('Log out')
+      expect(component.find('a.dropdown-menu-link').get(0).props.children).toEqual('Sign out')
+    })
+
+    it('should not display the active caseload when user does not have one', () => {
+      component.setProps({ user: { caseLoadOptions: [] } })
+
+      expect(component.find('.case-load')).toHaveLength(0)
+    })
+
+    it('should display the active caseload if no caseloadOptions', () => {
+      component.setProps({ user: userWithEmptyCaseLoadOptions })
+
+      expect(component.find('.case-load')).toHaveLength(1)
+      expect(component.find('.case-load').get(0).props.children).toEqual('LEI')
+    })
+
+    it('should display the name of the user', () => {
+      component.setProps({ user: { name: 'Joe Bloggs', caseLoadOptions: [] } })
+
+      expect(component.find('.user-name')).toHaveLength(1)
+      expect(component.find('.user-name').get(0).props.children).toEqual('Joe Bloggs')
+    })
+
+    it('should fallback to using firstname lastname if name missing', () => {
+      component.setProps({ user: { firstName: 'JOE', lastName: 'BLOGGS', caseLoadOptions: [] } })
+
+      expect(component.find('.user-name')).toHaveLength(1)
+      expect(component.find('.user-name').get(0).props.children).toEqual('Joe Bloggs')
     })
 
     it('should close the menu when clicked', () => {
