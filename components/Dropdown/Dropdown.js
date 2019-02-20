@@ -32,7 +32,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
         menuOpen={menuOpen}
       >
         <UserName className="user-name">{toFullName(user)}</UserName>
-        <CaseLoad className="case-load">{caseLoadDesc}</CaseLoad>
+        {caseLoadDesc && <CaseLoad className="case-load">{caseLoadDesc}</CaseLoad>}
       </InfoWrapper>
       <DropdownMenu className="dropdown-menu">
         {menuOpen && (
@@ -67,7 +67,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
               </DropdownMenuButton>
             ))}
             <DropdownMenuLink className="dropdown-menu-link" key="logout" href="/auth/logout">
-              Log out
+              Sign out
             </DropdownMenuLink>
           </div>
         )}
@@ -78,6 +78,7 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
 
 Dropdown.propTypes = {
   user: PropTypes.shape({
+    name: PropTypes.string,
     firstName: PropTypes.string,
     lastName: PropTypes.string,
     activeCaseLoadId: PropTypes.string,
@@ -98,8 +99,9 @@ Dropdown.propTypes = {
 
 Dropdown.defaultProps = {
   user: {
-    firstName: 'first',
-    activeCaseLoadId: 'id',
+    name: '',
+    firstName: '',
+    activeCaseLoadId: '',
     isOpen: false,
   },
   menuOpen: false,

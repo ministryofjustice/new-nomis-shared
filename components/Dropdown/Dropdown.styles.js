@@ -36,8 +36,7 @@ export const InfoWrapper = styled('div')`
 export const UserName = styled('strong')`
   position: relative;
   margin-left: auto;
-  padding: 0 10px 0 0px;
-  border-right: solid white 1px;
+  padding: 0 10px 0 0;
   font-size: 19px;
 `
 
@@ -45,6 +44,7 @@ export const CaseLoad = styled('span')`
   margin-right: auto;
   padding: 0 18px 0 10px;
   font-size: 19px;
+  border-left: solid white 1px;
 `
 
 export const DropdownMenu = styled('div')`
