@@ -15,6 +15,9 @@ const props = {
   setMenuOpen: () => action('clicked'),
   homeLink: '/',
   user: {
+    username: 'TESTUSER',
+    firstName: 'Test',
+    lastName: 'User',
     activeCaseLoadId: 'LEI',
     caseLoadOptions: [
       {
