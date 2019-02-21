@@ -1,5 +1,6 @@
 import styled, { css } from 'react-emotion'
 import { BLUE, LIGHT_BLUE } from 'govuk-colours'
+import { SPACING, NTA_LIGHT } from '@govuk-react/constants'
 import downArrowCircle from './images/down-arrow-circle.png'
 
 export const MenuWrapper = styled('div')`
@@ -15,16 +16,16 @@ export const InfoWrapper = styled('div')`
   position: relative;
   display: flex;
   align-items: center;
-  margin: 0 26px;
+  margin: 0 ${SPACING.SCALE_4};
   width: 100%;
-  padding: 2px 26px 2px 0;
+  padding: 2px ${SPACING.SCALE_4} 2px 0;
 
   &:before {
     content: '';
     position: absolute;
     right: 0;
-    height: 26px;
-    width: 26px;
+    height: ${SPACING.SCALE_4};
+    width: ${SPACING.SCALE_4};
     background-image: url(${downArrowCircle});
     background-repeat: no-repeat;
     background-position: right;
@@ -66,6 +67,7 @@ const linkStyle = css`
   background: ${BLUE};
   color: white;
   font-size: 19px;
+  font-family: ${NTA_LIGHT};
   align-items: center;
   text-align: left;
   border-width: 1px 0 0;
