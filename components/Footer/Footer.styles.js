@@ -1,7 +1,7 @@
-import styled, { css } from 'react-emotion'
+import styled, { css } from 'styled-components'
 import { SPACING, LINE_HEIGHT, FONT_SIZE, GUTTER_HALF, NTA_LIGHT, BREAKPOINTS, GUTTER } from '@govuk-react/constants'
 import { GREY_2, FOOTER_BACKGROUND, FOOTER_TEXT, FOOTER_BORDER_TOP } from 'govuk-colours'
-import Header from '@govuk-react/header'
+import Heading from '@govuk-react/heading'
 import { RESPONSIVE_4, RESPONSIVE_5, RESPONSIVE_7, RESPONSIVE_8 } from '@govuk-react/constants/lib/spacing'
 import crestLogo from './images/govuk-crest.png'
 import crestLogo2x from './images/govuk-crest-2x.png'
@@ -88,7 +88,7 @@ export const StyledMetaCustom = styled('div')`
 `
 
 // .govuk-visually-hidden
-export const StyledHiddenHeader = styled(Header)`
+export const StyledHiddenHeading = styled(Heading)`
   position: absolute !important;
   width: 1px !important;
   height: 1px !important;
@@ -111,7 +111,7 @@ export const StyledInlineList = styled('div')`
   }
 `
 
-export const StyledSectionHeading = styled(Header)`
+export const StyledSectionHeading = styled(Heading)`
   border-bottom: 1px solid ${GREY_2};
   padding-bottom: ${SPACING.SCALE_2};
   margin-bottom: ${RESPONSIVE_7.mobile}px;

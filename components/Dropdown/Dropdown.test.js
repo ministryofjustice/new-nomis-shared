@@ -159,12 +159,7 @@ describe('Dropdown component', () => {
       const extraLinks = [{ text: 'stuff' }, { url: '/route1', text: 'route1', onClick: callBack }]
 
       component.setProps({ extraLinks, menuOpen: true })
-      expect(
-        component
-          .find('#menu-option-stuff')
-          .dive()
-          .text()
-      ).toBe('stuff')
+      expect(component.find('#menu-option-stuff').text()).toBe('stuff')
       component
         .find('#menu-option-route1')
         .at(0)

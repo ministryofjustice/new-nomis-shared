@@ -19,10 +19,9 @@ module.exports = {
     'style-loader',
     'sass-loader',
     'file-loader',
-    'emotion',
-    'react-emotion',
+    'styled-components',
     '@govuk-react/constants',
-    '@govuk-react/header',
+    '@govuk-react/heading',
   ],
   module: {
     rules: [

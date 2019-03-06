@@ -10,7 +10,7 @@ import {
   StyledLicenseDescription,
   StyledLicenseLogo,
   StyledCopyrightLogo,
-  StyledHiddenHeader,
+  StyledHiddenHeading,
   StyledNavigation,
   StyledSection,
   StyledSectionBreak,
@@ -60,7 +60,7 @@ const Footer = ({ navigation, meta, children }) => (
             meta.items &&
             meta.items.length > 0 && (
               <Fragment>
-                <StyledHiddenHeader level={2}>Support links</StyledHiddenHeader>
+                <StyledHiddenHeading level={2}>Support links</StyledHiddenHeading>
                 <StyledInlineList>{renderLinks(meta.items)}</StyledInlineList>
               </Fragment>
             )}

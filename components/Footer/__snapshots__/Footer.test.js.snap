@@ -2,20 +2,20 @@
 
 exports[`<Footer /> should match the default snapshot 1`] = `
 <footer
-  className="css-o907y"
+  className="sc-htpNat bkysdI"
   role="contentinfo"
 >
   <div
-    className="css-1fmqkun"
+    className="sc-bxivhb dOBdqA"
   >
     <div
-      className="css-dzhhuw"
+      className="sc-EHOje bGMlPn"
     >
       <div
-        className="css-1c78jxr"
+        className="sc-bZQynM cvzEjQ"
       >
         <svg
-          className="css-11k3glg"
+          className="sc-jTzLTM ilpblk"
           focusable="false"
           height="17"
           role="presentation"
@@ -29,25 +29,28 @@ exports[`<Footer /> should match the default snapshot 1`] = `
           />
         </svg>
         <span
-          className="css-7kp13n"
+          className="sc-fjdhpX kOVkRO"
         >
           All content is available under the
            
-          <a
-            className="css-1timic5"
-            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-            rel="license"
+          <span
+            className="sc-bwzfXH gXOrjU"
           >
-            Open Government Licence v3.0
-          </a>
+            <a
+              href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+              rel="license"
+            >
+              Open Government Licence v3.0
+            </a>
+          </span>
           , except where otherwise stated
         </span>
       </div>
       <div
-        className="css-ua7yhj"
+        className="sc-bZQynM yGSHK"
       >
         <a
-          className="css-1v1p8ig"
+          className="sc-jzJRlG iOfAMM"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
           © Crown copyright
@@ -60,20 +63,20 @@ exports[`<Footer /> should match the default snapshot 1`] = `
 
 exports[`<Footer /> should match the with children snapshot 1`] = `
 <footer
-  className="css-o907y"
+  className="sc-htpNat bkysdI"
   role="contentinfo"
 >
   <div
-    className="css-1fmqkun"
+    className="sc-bxivhb dOBdqA"
   >
     <div
-      className="css-dzhhuw"
+      className="sc-EHOje bGMlPn"
     >
       <div
-        className="css-1c78jxr"
+        className="sc-bZQynM cvzEjQ"
       >
         <div
-          className="css-op3zxg"
+          className="sc-gzVnrw gxLAvJ"
         >
           Built by the 
           <a
@@ -83,7 +86,7 @@ exports[`<Footer /> should match the with children snapshot 1`] = `
           </a>
         </div>
         <svg
-          className="css-11k3glg"
+          className="sc-jTzLTM ilpblk"
           focusable="false"
           height="17"
           role="presentation"
@@ -97,25 +100,28 @@ exports[`<Footer /> should match the with children snapshot 1`] = `
           />
         </svg>
         <span
-          className="css-7kp13n"
+          className="sc-fjdhpX kOVkRO"
         >
           All content is available under the
            
-          <a
-            className="css-1timic5"
-            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-            rel="license"
+          <span
+            className="sc-bwzfXH gXOrjU"
           >
-            Open Government Licence v3.0
-          </a>
+            <a
+              href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+              rel="license"
+            >
+              Open Government Licence v3.0
+            </a>
+          </span>
           , except where otherwise stated
         </span>
       </div>
       <div
-        className="css-ua7yhj"
+        className="sc-bZQynM yGSHK"
       >
         <a
-          className="css-1v1p8ig"
+          className="sc-jzJRlG iOfAMM"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
           © Crown copyright
@@ -128,54 +134,63 @@ exports[`<Footer /> should match the with children snapshot 1`] = `
 
 exports[`<Footer /> should match the with meta snapshot 1`] = `
 <footer
-  className="css-o907y"
+  className="sc-htpNat bkysdI"
   role="contentinfo"
 >
   <div
-    className="css-1fmqkun"
+    className="sc-bxivhb dOBdqA"
   >
     <div
-      className="css-dzhhuw"
+      className="sc-EHOje bGMlPn"
     >
       <div
-        className="css-1c78jxr"
+        className="sc-bZQynM cvzEjQ"
       >
         <h2
-          className="css-45ndwf-StyledHeader-StyledHoc ecdzz5u0"
+          className="sc-htoDjs daNMMx sc-bdVaJa eLwxMn"
         >
           Support links
         </h2>
         <div
-          className="css-z5k0ly"
+          className="sc-dnqmqq dhKqXx"
         >
           <li>
-            <a
-              className="css-1timic5"
-              href="/normal-link"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Normal Link
-            </a>
+              <a
+                href="/normal-link"
+              >
+                Normal Link
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/router-link"
-              onClick={[Function]}
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Router Link
-            </a>
+              <a
+                href="/router-link"
+                onClick={[Function]}
+              >
+                Router Link
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              onClick={[MockFunction]}
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              onClick Link
-            </a>
+              <a
+                onClick={[MockFunction]}
+              >
+                onClick Link
+              </a>
+            </span>
           </li>
         </div>
         <svg
-          className="css-11k3glg"
+          className="sc-jTzLTM ilpblk"
           focusable="false"
           height="17"
           role="presentation"
@@ -189,25 +204,28 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
           />
         </svg>
         <span
-          className="css-7kp13n"
+          className="sc-fjdhpX kOVkRO"
         >
           All content is available under the
            
-          <a
-            className="css-1timic5"
-            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-            rel="license"
+          <span
+            className="sc-bwzfXH gXOrjU"
           >
-            Open Government Licence v3.0
-          </a>
+            <a
+              href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+              rel="license"
+            >
+              Open Government Licence v3.0
+            </a>
+          </span>
           , except where otherwise stated
         </span>
       </div>
       <div
-        className="css-ua7yhj"
+        className="sc-bZQynM yGSHK"
       >
         <a
-          className="css-1v1p8ig"
+          className="sc-jzJRlG iOfAMM"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
           © Crown copyright
@@ -220,229 +238,295 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
 
 exports[`<Footer /> should match the with navigation snapshot 1`] = `
 <footer
-  className="css-o907y"
+  className="sc-htpNat bkysdI"
   role="contentinfo"
 >
   <div
-    className="css-1fmqkun"
+    className="sc-bxivhb dOBdqA"
   >
     <div
-      className="css-thb5ct"
+      className="sc-gZMcBi fnWdCz"
     >
       <div
-        className="css-1o7eu7"
+        className="sc-gqjmRU bIBQJo"
       >
         <h2
-          className="css-1jjvyyi-StyledHeader-StyledHoc ecdzz5u0"
+          className="sc-iwsKbI gMKkcH sc-bdVaJa jAqeHE"
         >
           Services and information
         </h2>
         <ul
-          className="css-1wreg1n"
+          className="sc-VigVT erjKcu"
         >
           <li>
-            <a
-              className="css-1timic5"
-              href="/benefits"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Benefits
-            </a>
+              <a
+                href="/benefits"
+              >
+                Benefits
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/births-deaths"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Births, deaths, marriages and care
-            </a>
+              <a
+                href="/births-deaths"
+              >
+                Births, deaths, marriages and care
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/business-self-employed"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Business and self-employed
-            </a>
+              <a
+                href="/business-self-employed"
+              >
+                Business and self-employed
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/childcare-parenting"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Childcare and parenting
-            </a>
+              <a
+                href="/childcare-parenting"
+              >
+                Childcare and parenting
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/citizenship"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Citizenship and living in the UK
-            </a>
+              <a
+                href="/citizenship"
+              >
+                Citizenship and living in the UK
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/crime-justice"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Crime, justice and the law
-            </a>
+              <a
+                href="/crime-justice"
+              >
+                Crime, justice and the law
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/disabled-people"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Disabled people
-            </a>
+              <a
+                href="/disabled-people"
+              >
+                Disabled people
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/driving-transport"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Driving and transport
-            </a>
+              <a
+                href="/driving-transport"
+              >
+                Driving and transport
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/education-learning"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Education and learning
-            </a>
+              <a
+                href="/education-learning"
+              >
+                Education and learning
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/employing-people"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Employing people
-            </a>
+              <a
+                href="/employing-people"
+              >
+                Employing people
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/environment-countryside"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Environment and countryside
-            </a>
+              <a
+                href="/environment-countryside"
+              >
+                Environment and countryside
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/housing-local"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Housing and local services
-            </a>
+              <a
+                href="/housing-local"
+              >
+                Housing and local services
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/money-tax"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Money and tax
-            </a>
+              <a
+                href="/money-tax"
+              >
+                Money and tax
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/passports-abroad"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Passports, travel and living abroad
-            </a>
+              <a
+                href="/passports-abroad"
+              >
+                Passports, travel and living abroad
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/visas-immigration"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Visas and immigration
-            </a>
+              <a
+                href="/visas-immigration"
+              >
+                Visas and immigration
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/working-pensions"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Working, jobs and pensions
-            </a>
+              <a
+                href="/working-pensions"
+              >
+                Working, jobs and pensions
+              </a>
+            </span>
           </li>
         </ul>
       </div>
       <div
-        className="css-1o7eu7"
+        className="sc-gqjmRU bIBQJo"
       >
         <h2
-          className="css-1jjvyyi-StyledHeader-StyledHoc ecdzz5u0"
+          className="sc-iwsKbI gMKkcH sc-bdVaJa jAqeHE"
         >
           Departments and policy
         </h2>
         <ul
-          className="css-ul2glb"
+          className="sc-VigVT bNGtuc"
         >
           <li>
-            <a
-              className="css-1timic5"
-              href="/how-gov-works"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              How government works
-            </a>
+              <a
+                href="/how-gov-works"
+              >
+                How government works
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/departments"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Departments
-            </a>
+              <a
+                href="/departments"
+              >
+                Departments
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/worldwide"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Worldwide
-            </a>
+              <a
+                href="/worldwide"
+              >
+                Worldwide
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/policies"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Policies
-            </a>
+              <a
+                href="/policies"
+              >
+                Policies
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/publications"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Publications
-            </a>
+              <a
+                href="/publications"
+              >
+                Publications
+              </a>
+            </span>
           </li>
           <li>
-            <a
-              className="css-1timic5"
-              href="/announcements"
+            <span
+              className="sc-bwzfXH gXOrjU"
             >
-              Announcements
-            </a>
+              <a
+                href="/announcements"
+              >
+                Announcements
+              </a>
+            </span>
           </li>
         </ul>
       </div>
     </div>
     <hr
-      className="css-uf3sj0"
+      className="sc-ifAKCX jlKcyU"
     />
     <div
-      className="css-dzhhuw"
+      className="sc-EHOje bGMlPn"
     >
       <div
-        className="css-1c78jxr"
+        className="sc-bZQynM cvzEjQ"
       >
         <svg
-          className="css-11k3glg"
+          className="sc-jTzLTM ilpblk"
           focusable="false"
           height="17"
           role="presentation"
@@ -456,25 +540,28 @@ exports[`<Footer /> should match the with navigation snapshot 1`] = `
           />
         </svg>
         <span
-          className="css-7kp13n"
+          className="sc-fjdhpX kOVkRO"
         >
           All content is available under the
            
-          <a
-            className="css-1timic5"
-            href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
-            rel="license"
+          <span
+            className="sc-bwzfXH gXOrjU"
           >
-            Open Government Licence v3.0
-          </a>
+            <a
+              href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+              rel="license"
+            >
+              Open Government Licence v3.0
+            </a>
+          </span>
           , except where otherwise stated
         </span>
       </div>
       <div
-        className="css-ua7yhj"
+        className="sc-bZQynM yGSHK"
       >
         <a
-          className="css-1v1p8ig"
+          className="sc-jzJRlG iOfAMM"
           href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/"
         >
           © Crown copyright
