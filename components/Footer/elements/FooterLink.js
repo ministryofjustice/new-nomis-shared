@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { css } from 'react-emotion'
+import styled, { css } from 'styled-components'
 import { FOCUS_WIDTH } from '@govuk-react/constants'
 import { FOOTER_LINK, FOOTER_LINK_HOVER, TEXT_COLOUR, FOCUS_COLOUR } from 'govuk-colours'
 
@@ -29,10 +29,18 @@ export const footerLinkStyle = css`
   }
 `
 
+const LinkContainer = styled.span`
+  a {
+    ${footerLinkStyle};
+  }
+`
+
 const FooterLink = ({ href, to, children, linkType: LinkType, ...props }) => (
-  <LinkType href={href} to={to} className={footerLinkStyle} {...props}>
-    {children}
-  </LinkType>
+  <LinkContainer>
+    <LinkType href={href} to={to} {...props}>
+      {children}
+    </LinkType>
+  </LinkContainer>
 )
 
 FooterLink.propTypes = {

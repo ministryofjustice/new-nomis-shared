@@ -1,4 +1,4 @@
-import styled, { css } from 'react-emotion'
+import styled, { css } from 'styled-components'
 import { BLUE, LIGHT_BLUE } from 'govuk-colours'
 import { SPACING, NTA_LIGHT } from '@govuk-react/constants'
 import downArrowCircle from './images/down-arrow-circle.png'
