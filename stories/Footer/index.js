@@ -48,7 +48,7 @@ storiesOf('Footer', module)
   .add('Default footer', () => <Footer />)
   .add('With meta links', () => <Footer meta={meta} />)
   .add('With navigation links', () => <Footer navigation={navigation} />)
-  .add('With meta and navigation links', () => <Footer meta={meta} navigation={navigation} />)
+  .add('With meta and navigation links', () => <Footer navigation={navigation} />)
   .add('With children', () => (
     <Footer>
       Built by the <Footer.Link href="/gds">Government Digital Service</Footer.Link>
