@@ -5,8 +5,8 @@
   "author": "HMPPS",
   "license": "UNLICENSED",
   "dependencies": {
-    "@govuk-react/constants": "^0.6.0",
-    "@govuk-react/heading": "^0.6.0",
+    "@govuk-react/constants": "^0.7.0",
+    "@govuk-react/heading": "^0.7.0",
     "css-loader": "^1.0.0",
     "emotion": "9.2.12",
     "file-loader": "^3.0.1",
