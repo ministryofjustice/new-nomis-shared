@@ -40,9 +40,7 @@ const Footer = ({ navigation, meta, children }) => (
             <StyledNavigation>
               {navigation.map(section => (
                 <StyledSection key={hyphenateString(section.title)}>
-                  <StyledSectionHeading level={2} size="MEDIUM">
-                    {section.title}
-                  </StyledSectionHeading>
+                  <StyledSectionHeading size="MEDIUM">{section.title}</StyledSectionHeading>
                   {section.items &&
                     section.items.length > 0 && (
                       <StyledFooterList columns={section.columns}>{renderLinks(section.items)}</StyledFooterList>
@@ -60,7 +58,7 @@ const Footer = ({ navigation, meta, children }) => (
             meta.items &&
             meta.items.length > 0 && (
               <Fragment>
-                <StyledHiddenHeading level={2}>Support links</StyledHiddenHeading>
+                <StyledHiddenHeading size="MEDIUM">Support links</StyledHiddenHeading>
                 <StyledInlineList>{renderLinks(meta.items)}</StyledInlineList>
               </Fragment>
             )}

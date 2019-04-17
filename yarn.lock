@@ -174,27 +174,27 @@
   resolved "https://registry.yarnpkg.com/@emotion/utils/-/utils-0.8.2.tgz#576ff7fb1230185b619a75d258cbc98f0867a8dc"
   integrity sha512-rLu3wcBWH4P5q1CGoSSH/i9hrXs7SlbRLkoq9IGuoPYNGQvDJ3pt/wmOM+XgYjIDRMVIdkUWt0RsfzF50JfnCw==
 
-"@govuk-react/constants@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@govuk-react/constants/-/constants-0.6.0.tgz#8dd84556d0524019c15e883228abf3a0707f3768"
-  integrity sha512-Gc3qvt2HrFVECe+K9aNtjZGCdV2JIsai0bbRe5iXJGtQFOaI77oV/2f3r3uEA6fBEbC10Wz2xDjtoRSCqQLg/g==
+"@govuk-react/constants@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@govuk-react/constants/-/constants-0.7.0.tgz#c0b20c02e105f72b69d4e3347c65f85bdc968abc"
+  integrity sha512-HFDpxlcNlSE9bG3OrhCE6bqXxjhdbw7UFgv4AcY84ALtYufpNigkXs1pUBepkfH9ywcVPA6kAbe1f1ZA3bUT9A==
   dependencies:
     govuk-colours "^1.0.3"
 
-"@govuk-react/heading@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@govuk-react/heading/-/heading-0.6.0.tgz#9fc901a224a443abfb4ac4b76456c32513b8796e"
-  integrity sha512-UKNf2BtYqAiRvy7TsAgUrWv5e3iSDOYZKe+1GH992y+u8NX9QrJSnWrIn4YbpRqgfpX074+lsaC5ehfamSCs8Q==
+"@govuk-react/heading@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@govuk-react/heading/-/heading-0.7.0.tgz#9d4e0ce950d422219a8a5b43221ecf1dca506e68"
+  integrity sha512-0e+4jQnclwG3EgSjQn9aOrY9afsp6Vzx7mQcof39nS2mr+OLPJfJGPuMt5tyhdK42TJVt5JmtelDeARa/Xw86g==
   dependencies:
-    "@govuk-react/constants" "^0.6.0"
-    "@govuk-react/lib" "^0.6.0"
+    "@govuk-react/constants" "^0.7.0"
+    "@govuk-react/lib" "^0.7.0"
 
-"@govuk-react/lib@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@govuk-react/lib/-/lib-0.6.0.tgz#c66d8a085ee9f018d7419e8f4520f30f1633b55f"
-  integrity sha512-LKgroF1B3nWn+WtPp62qb7b5u80qXjQDieTAWmYQmWpOd31EwG+C+I7CVdP/YpJKAm1vdfEAaJYLZI5iAkh5Sw==
+"@govuk-react/lib@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@govuk-react/lib/-/lib-0.7.0.tgz#8ec4350e3b95da5e1d15df5ded4c80881c489d78"
+  integrity sha512-GqYZVFXusYiHDnoelMs91mZ/5O6QwYXyJQwtl31CgB0UM6OhoJTJl5XueDYZUFt34SPrby1Mi2uYildEYFQMPw==
   dependencies:
-    "@govuk-react/constants" "^0.6.0"
+    "@govuk-react/constants" "^0.7.0"
     govuk-colours "^1.0.3"
 
 "@samverschueren/stream-to-observable@^0.3.0":

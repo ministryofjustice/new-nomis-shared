@@ -147,7 +147,8 @@ exports[`<Footer /> should match the with meta snapshot 1`] = `
         className="sc-bZQynM cvzEjQ"
       >
         <h2
-          className="sc-htoDjs daNMMx sc-bdVaJa eLwxMn"
+          className="sc-htoDjs daNMMx sc-bdVaJa jAqeHE"
+          size="MEDIUM"
         >
           Support links
         </h2>
@@ -252,6 +253,7 @@ exports[`<Footer /> should match the with navigation snapshot 1`] = `
       >
         <h2
           className="sc-iwsKbI gMKkcH sc-bdVaJa jAqeHE"
+          size="MEDIUM"
         >
           Services and information
         </h2>
@@ -441,6 +443,7 @@ exports[`<Footer /> should match the with navigation snapshot 1`] = `
       >
         <h2
           className="sc-iwsKbI gMKkcH sc-bdVaJa jAqeHE"
+          size="MEDIUM"
         >
           Departments and policy
         </h2>
