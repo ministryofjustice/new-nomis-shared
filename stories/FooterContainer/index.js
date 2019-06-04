@@ -1,6 +1,8 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Footer from '../../components/FooterContainer'
+import FooterContainer from '../../components/FooterContainer'
 
-storiesOf('Footer', module).add('Default footer container', () => <Footer />)
+storiesOf('Footer container', module).add('Component default', () => (
+  <FooterContainer feedbackEmail="email@test.com" prisonStaffHubUrl="https://prisonstaffhub-dev.hmpps.dsd.io/" />
+))
