@@ -21,6 +21,12 @@ const WideContainer = styled(Footer.WidthContainer)`
   }
 `
 
+const StyledFooter = styled(Footer)`
+  @media print {
+    display: none;
+  }
+`
+
 const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
   const copyright = {
     text: 'Crown copyright',
@@ -43,7 +49,7 @@ const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
   )
 
   return (
-    <Footer copyright={copyright} meta={meta} container={WideContainer}>
+    <StyledFooter copyright={copyright} meta={meta} container={WideContainer}>
       <Footer.Navigation>
         <Footer.NavigationLinks heading="Useful links">
           <Footer.Link href={`${prisonStaffHubUrl}content/features`} target="_blank">
@@ -60,7 +66,7 @@ const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
           </Footer.Link>
         </Footer.NavigationLinks>
       </Footer.Navigation>
-    </Footer>
+    </StyledFooter>
   )
 }
 
