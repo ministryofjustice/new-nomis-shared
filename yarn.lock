@@ -188,10 +188,10 @@
   dependencies:
     govuk-colours "^1.0.3"
 
-"@govuk-react/footer@^0.7.1":
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/@govuk-react/footer/-/footer-0.7.1.tgz#3ec8b450542a5d0a9ce2f51eabf3283df24db090"
-  integrity sha512-rkKQeX2KUpA9q0H33PE301bs4g2M1gl8KM5yJmyrEALBAWx7niXcOAR5x0eAnnEP+v7ZcbS1FS9H27JeHQxIZg==
+"@govuk-react/footer@^0.7.2":
+  version "0.7.2"
+  resolved "https://registry.yarnpkg.com/@govuk-react/footer/-/footer-0.7.2.tgz#f880746279325be7805d41f29387c30ea5c66c23"
+  integrity sha512-m+FZRuY+2u+9fL4u2vMJcRUtVNXW9iISwqfCkVPZDjYMx26IpnNmw0rYhrMS1OClvpnHfY5mhhNWSTBR6oKlqg==
   dependencies:
     "@govuk-react/constants" "^0.7.1"
     "@govuk-react/heading" "^0.7.1"
