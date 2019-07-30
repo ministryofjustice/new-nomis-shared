@@ -1,0 +1,555 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<IEPSlip /> renders correctly 1`] = `
+<div
+  className="sc-bwzfXH cQUzRp"
+>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      <h2
+        className="sc-bdVaJa YBcoz"
+        size="MEDIUM"
+      >
+        IEP Warning
+      </h2>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date and time: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019, 12:00 am
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Name: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        An Offender
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Number: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        ABC123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Location: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        LEI-123
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Reason:
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Refused: Did not want to work
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Raised by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        A Officer
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Issued by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      />
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<IEPSlip /> renders with amendments 1`] = `
+<div
+  className="sc-bwzfXH cQUzRp"
+>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      <h2
+        className="sc-bdVaJa YBcoz"
+        size="MEDIUM"
+      >
+        IEP Warning
+      </h2>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date and time: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019, 12:00 am
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Name: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        An Offender
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Number: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        ABC123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Location: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        LEI-123
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Reason:
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Refused: Did not want to work
+      </span>
+      <div
+        className="sc-EHOje bVSyRj"
+      >
+        Amendment: 
+        <span
+          className="sc-ifAKCX hxQqKr"
+        >
+          Rescinded
+        </span>
+        <div>
+          1 January 2019, 2:17 pm
+        </div>
+        <div>
+          A Author
+        </div>
+      </div>
+      <div
+        className="sc-EHOje bVSyRj"
+      >
+        Amendment: 
+        <span
+          className="sc-ifAKCX hxQqKr"
+        >
+          Updated
+        </span>
+        <div>
+          1 January 2019, 3:17 pm
+        </div>
+        <div>
+          A Author
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Raised by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        A Officer
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Issued by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      />
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<IEPSlip /> renders with an activity or area 1`] = `
+<div
+  className="sc-bwzfXH cQUzRp"
+>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      <h2
+        className="sc-bdVaJa YBcoz"
+        size="MEDIUM"
+      >
+        IEP Warning
+      </h2>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date and time: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019, 12:00 am
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Name: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        An Offender
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Number: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        ABC123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Location: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        LEI-123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Activity or area: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Gym
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Reason:
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Refused: Did not want to work
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Raised by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        A Officer
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Issued by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      />
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<IEPSlip /> renders with an issued by name 1`] = `
+<div
+  className="sc-bwzfXH cQUzRp"
+>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      <h2
+        className="sc-bdVaJa YBcoz"
+        size="MEDIUM"
+      >
+        IEP Warning
+      </h2>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date and time: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019, 12:00 am
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Name: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        An Offender
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Number: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        ABC123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Location: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        LEI-123
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Activity or area: 
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Gym
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat jyGGsS"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Reason:
+      <span
+        className="sc-ifAKCX hxQqKr"
+      >
+        Refused: Did not want to work
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Raised by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        A Officer
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+  <div
+    className="sc-htpNat garCfj"
+  >
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Issued by: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        A Officer
+      </span>
+    </div>
+    <div
+      className="sc-bxivhb hEVLlJ"
+    >
+      Date: 
+      <span
+        className="sc-ifAKCX fJmoaE"
+      >
+        1 January 2019
+      </span>
+    </div>
+  </div>
+</div>
+`;

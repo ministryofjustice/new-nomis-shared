@@ -66,6 +66,11 @@ const getEventDescription = event => {
   return event.eventDescription
 }
 
+const forenameToInitial = name => {
+  if (!name) return null
+  return `${name.charAt()} ${name.split(' ').pop()}`
+}
+
 // noinspection JSUnusedGlobalSymbols
 module.exports = {
   properCase,
@@ -76,4 +81,5 @@ module.exports = {
   getPrisonDescription,
   getEventDescription,
   stripAgencyPrefix,
+  forenameToInitial,
 }
