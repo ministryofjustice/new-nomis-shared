@@ -3,11 +3,12 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { H2 } from '@govuk-react/heading'
 import { BORDER_COLOUR } from 'govuk-colours'
-import { spacing } from '@govuk-react/lib'
+import { spacing, typography } from '@govuk-react/lib'
 import moment from 'moment'
 import { forenameToInitial } from '../../utils'
 
 const IEPSlipDetails = styled.div`
+  ${typography.font({ size: 19 })};
   border-bottom: 1px dashed ${BORDER_COLOUR};
 `
 
