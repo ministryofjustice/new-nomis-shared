@@ -46,8 +46,6 @@ function IEPSlip({
   cellLocation,
   amendments,
 }) {
-  const today = moment()
-
   return (
     <IEPSlipDetails>
       <Row>
@@ -57,7 +55,7 @@ function IEPSlip({
           </H2>
         </Column>
         <Column>
-          Date and time: <Value inline>{today.format('D MMMM YYYY, h:mm a')}</Value>
+          Date and time: <Value inline>{moment(raisedDate).format('D MMMM YYYY, h:mm a')}</Value>
         </Column>
       </Row>
       <Row>
@@ -105,7 +103,7 @@ function IEPSlip({
           Issued by: <Value inline>{forenameToInitial(issuedBy)}</Value>
         </Column>
         <Column>
-          Date: <Value inline>{today.format('D MMMM YYYY')}</Value>
+          Date: <Value inline>{moment().format('D MMMM YYYY')}</Value>
         </Column>
       </Row>
     </IEPSlipDetails>
