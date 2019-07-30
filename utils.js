@@ -68,7 +68,18 @@ const getEventDescription = event => {
 
 const forenameToInitial = name => {
   if (!name) return null
-  return `${name.charAt()} ${name.split(' ').pop()}`
+
+  let formattedName = name
+
+  if (name.includes(',')) {
+    formattedName = name
+      .split(',')
+      .map(part => part.trim())
+      .reverse()
+      .join(' ')
+  }
+
+  return `${formattedName.charAt()} ${formattedName.split(' ').pop()}`
 }
 
 // noinspection JSUnusedGlobalSymbols

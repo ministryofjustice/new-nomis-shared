@@ -5,6 +5,7 @@ import IEPSlip from '../../components/IEPSlip'
 
 const props = {
   raisedBy: 'An Officer',
+  raisedDate: '2018-11-01T14:17:30',
   issuedBy: 'Another Officer',
   offenderName: 'An Offender',
   offenderNo: 'ABC123',
@@ -18,8 +19,8 @@ storiesOf('IEP slip', module)
     <IEPSlip
       {...props}
       amendments={[
-        { authorName: 'Amendment Author', creationDateTime: '2019-01-01T14:17:30', additionalNoteText: 'Rescinded' },
-        { authorName: 'Amendment Author', creationDateTime: '2019-01-01T15:17:30', additionalNoteText: 'Updated' },
+        { authorName: 'Author, Amendment', creationDateTime: '2019-01-01T14:17:30', additionalNoteText: 'Rescinded' },
+        { authorName: 'Author, Amendment', creationDateTime: '2019-01-01T15:17:30', additionalNoteText: 'Updated' },
       ]}
     />
   ))

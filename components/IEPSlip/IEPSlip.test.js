@@ -35,11 +35,11 @@ describe('<IEPSlip />', () => {
           {...props}
           amendments={[
             {
-              authorName: 'Amendment Author',
+              authorName: 'Author, Amendment',
               creationDateTime: '2019-01-01T14:17:30',
               additionalNoteText: 'Rescinded',
             },
-            { authorName: 'Amendment Author', creationDateTime: '2019-01-01T15:17:30', additionalNoteText: 'Updated' },
+            { authorName: 'Amendment, Author', creationDateTime: '2019-01-01T15:17:30', additionalNoteText: 'Updated' },
           ]}
         />
       )
