@@ -1,21 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { getPrisonDescription, toFullName } from '../../utils'
-import {
-  MenuWrapper,
-  InfoWrapper,
-  UserName,
-  CaseLoad,
-  DropdownMenu,
-  DropdownMenuButton,
-  DropdownMenuLink,
-} from './Dropdown.styles'
+import { MenuWrapper, InfoWrapper, UserName, CaseLoad, DropdownMenu, DropdownMenuLink } from './Dropdown.styles'
 
 const createMenuOptionId = text => `menu-option-${text && text.replace(' ', '-')}`
 
-const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraLinks, caseChangeRedirect }) => {
+const Dropdown = ({ user, menuOpen, setMenuOpen, extraLinks }) => {
   const caseLoadDesc = getPrisonDescription(user)
-  const options = user.caseLoadOptions.filter(x => x.caseLoadId !== user.activeCaseLoadId)
 
   return (
     <MenuWrapper>
@@ -51,21 +42,6 @@ const Dropdown = ({ user, switchCaseLoad, history, menuOpen, setMenuOpen, extraL
                 {link.text}
               </DropdownMenuLink>
             ))}
-            {options.map(option => (
-              <DropdownMenuButton
-                type="button"
-                className="dropdown-menu-option"
-                id={`menu-option-${option.caseLoadId}`}
-                key={option.caseLoadId}
-                onClick={() => {
-                  setMenuOpen(false)
-                  switchCaseLoad(option.caseLoadId)
-                  if (caseChangeRedirect) history.push('/')
-                }}
-              >
-                {option.description}
-              </DropdownMenuButton>
-            ))}
             <DropdownMenuLink className="dropdown-menu-link" key="logout" href="/auth/logout">
               Sign out
             </DropdownMenuLink>
@@ -89,9 +65,6 @@ Dropdown.propTypes = {
   }),
   menuOpen: PropTypes.bool,
   setMenuOpen: PropTypes.func.isRequired,
-  switchCaseLoad: PropTypes.func.isRequired,
-  history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
-  caseChangeRedirect: PropTypes.bool,
   extraLinks: PropTypes.arrayOf(
     PropTypes.shape({ url: PropTypes.string, text: PropTypes.string.isRequired, onclick: PropTypes.func })
   ),
@@ -106,7 +79,6 @@ Dropdown.defaultProps = {
   },
   menuOpen: false,
   extraLinks: [],
-  caseChangeRedirect: true,
 }
 
 export default Dropdown

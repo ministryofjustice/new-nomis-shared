@@ -81,10 +81,6 @@ const linkStyle = css`
   }
 `
 
-export const DropdownMenuButton = styled('button')`
-  ${linkStyle};
-`
-
 export const DropdownMenuLink = styled('a')`
   ${linkStyle};
 `
