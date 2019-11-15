@@ -4,18 +4,7 @@ import Dropdown from '../Dropdown'
 import './header.scss'
 import '../common.scss'
 
-const Header = ({
-  homeLink,
-  logoText,
-  title,
-  user,
-  menuOpen,
-  setMenuOpen,
-  switchCaseLoad,
-  history,
-  caseChangeRedirect,
-  extraLinks,
-}) => (
+const Header = ({ homeLink, logoText, title, user, menuOpen, setMenuOpen, extraLinks }) => (
   <header className="page-header">
     <div className="header-content clickable">
       <div className="left-content">
@@ -33,15 +22,7 @@ const Header = ({
         <div className="right-menu">
           {user &&
             user.username && (
-              <Dropdown
-                user={user}
-                menuOpen={menuOpen}
-                setMenuOpen={setMenuOpen}
-                switchCaseLoad={switchCaseLoad}
-                history={history}
-                caseChangeRedirect={caseChangeRedirect}
-                extraLinks={extraLinks}
-              />
+              <Dropdown user={user} menuOpen={menuOpen} setMenuOpen={setMenuOpen} extraLinks={extraLinks} />
             )}
         </div>
       </div>
@@ -60,11 +41,8 @@ Header.propTypes = {
     activeCaseLoadId: PropTypes.string,
     isOpen: PropTypes.bool,
   }),
-  switchCaseLoad: PropTypes.func.isRequired,
-  history: PropTypes.shape({ push: PropTypes.func.isRequired }).isRequired,
   menuOpen: PropTypes.bool,
   setMenuOpen: PropTypes.func.isRequired,
-  caseChangeRedirect: PropTypes.bool,
   extraLinks: PropTypes.arrayOf(
     PropTypes.shape({ url: PropTypes.string, text: PropTypes.string.isRequired, onclick: PropTypes.func })
   ),
@@ -74,7 +52,6 @@ Header.defaultProps = {
   user: {},
   menuOpen: false,
   extraLinks: [],
-  caseChangeRedirect: true,
 }
 
 // noinspection JSUnusedGlobalSymbols

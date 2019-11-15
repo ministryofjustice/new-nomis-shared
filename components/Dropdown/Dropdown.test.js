@@ -68,17 +68,10 @@ describe('Dropdown component', () => {
     })
 
     it('should render correctly', () => {
-      const dropdown = component.find('.dropdown-menu-option')
-      // Current id 'LEI' should be omitted
+      const dropdown = component.find('.dropdown-menu-link')
+
       expect(dropdown.length).toEqual(1)
-      expect(dropdown.get(0).props.children).toEqual('Shrewsbury (HMP)')
-    })
-
-    it('should handle the display of empty caseLoadOptions elegantly', () => {
-      component.setProps({ user: userWithEmptyCaseLoadOptions })
-
-      expect(component.find('.dropdown-menu-option')).toHaveLength(0)
-      expect(component.find('.dropdown-menu-link').get(0).props.children).toEqual('Sign out')
+      expect(dropdown.get(0).props.children).toEqual('Sign out')
     })
 
     it('should not display the active caseload when user does not have one', () => {
@@ -117,43 +110,9 @@ describe('Dropdown component', () => {
 
       expect(props.setMenuOpen).toHaveBeenCalledWith(false)
     })
-
-    it('should close the menu when clicked', () => {
-      component
-        .find('.dropdown-menu-option')
-        .at(0)
-        .prop('onClick')()
-
-      expect(props.setMenuOpen).toHaveBeenCalledWith(false)
-    })
   })
 
   describe('Dropdown menu items', () => {
-    it('should switch the case load when clicked', () => {
-      component
-        .find('.dropdown-menu-option')
-        .at(0)
-        .prop('onClick')()
-      expect(props.switchCaseLoad).toHaveBeenCalledWith('SYI')
-    })
-
-    it('should redirect back to the root of the application by default when clicked', () => {
-      component
-        .find('.dropdown-menu-option')
-        .at(0)
-        .prop('onClick')()
-      expect(props.history.push).toHaveBeenCalledWith('/')
-    })
-
-    it('should NOT redirect back to the root of the application if specified when clicked', () => {
-      component.setProps({ caseChangeRedirect: false })
-      component
-        .find('.dropdown-menu-option')
-        .at(0)
-        .prop('onClick')()
-      expect(props.history.push).not.toHaveBeenCalled()
-    })
-
     it('should setup extra links correctly', () => {
       const callBack = jest.fn()
       const extraLinks = [{ text: 'stuff' }, { url: '/route1', text: 'route1', onClick: callBack }]
