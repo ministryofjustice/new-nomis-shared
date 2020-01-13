@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import IEPSlip from '.'
+import IncentiveLevelSlip from '.'
 
 const props = {
   raisedBy: 'An Officer',
@@ -11,27 +11,29 @@ const props = {
   cellLocation: 'LEI-123',
 }
 
-describe('<IEPSlip />', () => {
+describe('<IncentiveLevelSlip />', () => {
   Date.now = jest.fn(() => new Date(Date.UTC(2019, 0, 1)).valueOf())
   it('renders correctly', () => {
-    const tree = renderer.create(<IEPSlip {...props} />).toJSON()
+    const tree = renderer.create(<IncentiveLevelSlip {...props} />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   it('renders with an activity or area', () => {
-    const tree = renderer.create(<IEPSlip {...props} activityName="Gym" />).toJSON()
+    const tree = renderer.create(<IncentiveLevelSlip {...props} activityName="Gym" />).toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   it('renders with an issued by name', () => {
-    const tree = renderer.create(<IEPSlip {...props} activityName="Gym" issuedBy="Another Officer" />).toJSON()
+    const tree = renderer
+      .create(<IncentiveLevelSlip {...props} activityName="Gym" issuedBy="Another Officer" />)
+      .toJSON()
     expect(tree).toMatchSnapshot()
   })
 
   it('renders with amendments', () => {
     const tree = renderer
       .create(
-        <IEPSlip
+        <IncentiveLevelSlip
           {...props}
           amendments={[
             {

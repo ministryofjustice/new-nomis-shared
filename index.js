@@ -1,11 +1,11 @@
 import Header from './components/Header'
 import FooterContainer from './components/FooterContainer'
-import IEPSlip from './components/IEPSlip'
+import IncentiveLevelSlip from './components/IncentiveLevelSlip'
 
 const exposed = {
   Header,
   FooterContainer,
-  IEPSlip,
+  IncentiveLevelSlip,
 }
 
 module.exports = exposed
