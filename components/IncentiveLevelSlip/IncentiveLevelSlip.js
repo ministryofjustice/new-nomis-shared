@@ -7,7 +7,7 @@ import { spacing, typography } from '@govuk-react/lib'
 import moment from 'moment'
 import { forenameToInitial } from '../../utils'
 
-const IEPSlipDetails = styled.div`
+const IncentiveLevelSlipDetails = styled.div`
   ${typography.font({ size: 19 })};
   border-bottom: 1px dashed ${BORDER_COLOUR};
 `
@@ -34,7 +34,7 @@ const Amendment = styled.div`
   margin-top: ${spacing.simple(3)}px;
 `
 
-function IEPSlip({
+function IncentiveLevelSlip({
   type,
   raisedDate,
   raisedBy,
@@ -47,11 +47,11 @@ function IEPSlip({
   amendments,
 }) {
   return (
-    <IEPSlipDetails>
+    <IncentiveLevelSlipDetails>
       <Row>
         <Column>
           <H2 size="MEDIUM" mb={0}>
-            {type || 'IEP Warning'}
+            {type || 'Incentive Level Warning'}
           </H2>
         </Column>
         <Column>
@@ -106,11 +106,11 @@ function IEPSlip({
           Date: <Value inline>{moment().format('D MMMM YYYY')}</Value>
         </Column>
       </Row>
-    </IEPSlipDetails>
+    </IncentiveLevelSlipDetails>
   )
 }
 
-IEPSlip.propTypes = {
+IncentiveLevelSlip.propTypes = {
   type: PropTypes.string,
   raisedDate: PropTypes.string,
   raisedBy: PropTypes.string,
@@ -129,7 +129,7 @@ IEPSlip.propTypes = {
   ),
 }
 
-IEPSlip.defaultProps = {
+IncentiveLevelSlip.defaultProps = {
   type: undefined,
   raisedDate: undefined,
   raisedBy: undefined,
@@ -142,4 +142,4 @@ IEPSlip.defaultProps = {
   amendments: [],
 }
 
-export default IEPSlip
+export default IncentiveLevelSlip

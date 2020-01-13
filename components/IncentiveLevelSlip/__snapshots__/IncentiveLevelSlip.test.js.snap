@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<IEPSlip /> renders correctly 1`] = `
+exports[`<IncentiveLevelSlip /> renders correctly 1`] = `
 <div
   className="sc-bwzfXH ehcghv"
 >
@@ -14,7 +14,7 @@ exports[`<IEPSlip /> renders correctly 1`] = `
         className="sc-bdVaJa YBcoz"
         size="MEDIUM"
       >
-        IEP Warning
+        Incentive Level Warning
       </h2>
     </div>
     <div
@@ -125,7 +125,7 @@ exports[`<IEPSlip /> renders correctly 1`] = `
 </div>
 `;
 
-exports[`<IEPSlip /> renders with amendments 1`] = `
+exports[`<IncentiveLevelSlip /> renders with amendments 1`] = `
 <div
   className="sc-bwzfXH ehcghv"
 >
@@ -139,7 +139,7 @@ exports[`<IEPSlip /> renders with amendments 1`] = `
         className="sc-bdVaJa YBcoz"
         size="MEDIUM"
       >
-        IEP Warning
+        Incentive Level Warning
       </h2>
     </div>
     <div
@@ -282,7 +282,7 @@ exports[`<IEPSlip /> renders with amendments 1`] = `
 </div>
 `;
 
-exports[`<IEPSlip /> renders with an activity or area 1`] = `
+exports[`<IncentiveLevelSlip /> renders with an activity or area 1`] = `
 <div
   className="sc-bwzfXH ehcghv"
 >
@@ -296,7 +296,7 @@ exports[`<IEPSlip /> renders with an activity or area 1`] = `
         className="sc-bdVaJa YBcoz"
         size="MEDIUM"
       >
-        IEP Warning
+        Incentive Level Warning
       </h2>
     </div>
     <div
@@ -417,7 +417,7 @@ exports[`<IEPSlip /> renders with an activity or area 1`] = `
 </div>
 `;
 
-exports[`<IEPSlip /> renders with an issued by name 1`] = `
+exports[`<IncentiveLevelSlip /> renders with an issued by name 1`] = `
 <div
   className="sc-bwzfXH ehcghv"
 >
@@ -431,7 +431,7 @@ exports[`<IEPSlip /> renders with an issued by name 1`] = `
         className="sc-bdVaJa YBcoz"
         size="MEDIUM"
       >
-        IEP Warning
+        Incentive Level Warning
       </h2>
     </div>
     <div

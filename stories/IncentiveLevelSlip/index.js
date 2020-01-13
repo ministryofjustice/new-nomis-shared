@@ -1,7 +1,7 @@
 /* eslint-disable import/no-extraneous-dependencies */
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import IEPSlip from '../../components/IEPSlip'
+import IncentiveLevelSlip from '../../components/IncentiveLevelSlip'
 
 const props = {
   raisedBy: 'An Officer',
@@ -13,10 +13,10 @@ const props = {
   cellLocation: 'LEI-123',
 }
 
-storiesOf('IEP slip', module)
-  .add('Component default', () => <IEPSlip {...props} />)
+storiesOf('Incentive Level slip', module)
+  .add('Component default', () => <IncentiveLevelSlip {...props} />)
   .add('With amendments', () => (
-    <IEPSlip
+    <IncentiveLevelSlip
       {...props}
       amendments={[
         { authorName: 'Author, Amendment', creationDateTime: '2019-01-01T14:17:30', additionalNoteText: 'Rescinded' },
