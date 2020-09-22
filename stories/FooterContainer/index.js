@@ -4,5 +4,8 @@ import { storiesOf } from '@storybook/react'
 import FooterContainer from '../../components/FooterContainer'
 
 storiesOf('Footer container', module).add('Component default', () => (
-  <FooterContainer feedbackEmail="email@test.com" prisonStaffHubUrl="https://prisonstaffhub-dev.hmpps.dsd.io/" />
+  <FooterContainer
+    supportUrl="https://support-dev.hmpps.service.justice.gov.uk/"
+    prisonStaffHubUrl="https://prisonstaffhub-dev.hmpps.dsd.io/"
+  />
 ))

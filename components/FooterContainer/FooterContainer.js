@@ -27,7 +27,7 @@ const StyledFooter = styled(Footer)`
   }
 `
 
-const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
+const FooterContainer = ({ supportUrl, prisonStaffHubUrl }) => {
   const copyright = {
     text: 'Crown copyright',
     link:
@@ -41,7 +41,7 @@ const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
 
   const meta = (
     <Footer.MetaLinks heading="Support links">
-      <Footer.Link href={`mailto:${feedbackEmail}`}>Contact</Footer.Link>
+      <Footer.Link href={supportUrl}>Feedback and support</Footer.Link>
       <Footer.Link href={`${prisonStaffHubUrl}content/terms-conditions`} target="_blank">
         Terms and conditions
       </Footer.Link>
@@ -71,7 +71,7 @@ const FooterContainer = ({ feedbackEmail, prisonStaffHubUrl }) => {
 }
 
 FooterContainer.propTypes = {
-  feedbackEmail: PropTypes.string.isRequired,
+  supportUrl: PropTypes.string.isRequired,
   prisonStaffHubUrl: PropTypes.string,
 }
 
