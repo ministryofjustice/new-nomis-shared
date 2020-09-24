@@ -58,9 +58,6 @@ const FooterContainer = ({ supportUrl, prisonStaffHubUrl }) => {
           <Footer.Link href={`${prisonStaffHubUrl}content/roadmap`} target="_blank">
             Roadmap
           </Footer.Link>
-          <Footer.Link href={`${prisonStaffHubUrl}content/support`} target="_blank">
-            Support
-          </Footer.Link>
           <Footer.Link href={`${prisonStaffHubUrl}content/whats-new`} target="_blank">
             What&apos;s new
           </Footer.Link>
