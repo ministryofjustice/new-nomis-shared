@@ -9,7 +9,7 @@
     "@govuk-react/footer": "^0.7.2",
     "@govuk-react/heading": "^0.7.0",
     "@govuk-react/lib": "^0.7.1",
-    "css-loader": "^1.0.0",
+    "css-loader": "^5.0.0",
     "emotion": "9.2.12",
     "file-loader": "^3.0.1",
     "govuk-colours": "^1.0.3",
