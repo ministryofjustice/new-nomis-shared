@@ -48,26 +48,7 @@ const FooterContainer = ({ supportUrl, prisonStaffHubUrl }) => {
     </Footer.MetaLinks>
   )
 
-  return (
-    <StyledFooter copyright={copyright} meta={meta} container={WideContainer}>
-      <Footer.Navigation>
-        <Footer.NavigationLinks heading="Useful links">
-          <Footer.Link href={`${prisonStaffHubUrl}content/features`} target="_blank">
-            Features
-          </Footer.Link>
-          <Footer.Link href={`${prisonStaffHubUrl}content/roadmap`} target="_blank">
-            Roadmap
-          </Footer.Link>
-          <Footer.Link href={`${prisonStaffHubUrl}content/support`} target="_blank">
-            Support
-          </Footer.Link>
-          <Footer.Link href={`${prisonStaffHubUrl}content/whats-new`} target="_blank">
-            What&apos;s new
-          </Footer.Link>
-        </Footer.NavigationLinks>
-      </Footer.Navigation>
-    </StyledFooter>
-  )
+  return <StyledFooter copyright={copyright} meta={meta} container={WideContainer} />
 }
 
 FooterContainer.propTypes = {
