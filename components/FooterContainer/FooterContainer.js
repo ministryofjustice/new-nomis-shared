@@ -41,7 +41,7 @@ const FooterContainer = ({ supportUrl, prisonStaffHubUrl }) => {
 
   const meta = (
     <Footer.MetaLinks heading="Support links">
-      <Footer.Link href={supportUrl}>Feedback and support</Footer.Link>
+      <Footer.Link href={supportUrl}>Get help</Footer.Link>
       <Footer.Link href={`${prisonStaffHubUrl}content/terms-conditions`} target="_blank">
         Terms and conditions
       </Footer.Link>
